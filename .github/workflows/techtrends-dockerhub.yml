@@ -17,5 +17,4 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN}}
       -
         name: Build and push
-    - name: Build the Docker image
-      run: docker build ./project/techtrends/ --file Dockerfile --tag techtrends:latest
+        run: docker build ./project/techtrends/ --file Dockerfile --tag techtrends:latest
