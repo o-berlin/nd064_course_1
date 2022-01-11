@@ -10,8 +10,6 @@ defaults:
 jobs:
   docker:
     runs-on: ubuntu-latest
-    env:
-      working-directory: ./project/techtrends
     steps:
       -
         name: Login to DockerHub
