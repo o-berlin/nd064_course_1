@@ -1,0 +1,12 @@
+spec:
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    helm:
+      valueFiles:
+      - values-staging.yaml
+    path: projects/helm
+    repoURL: https://github.com/o-berlin/nd064_course_1
+    targetRevision: HEAD
