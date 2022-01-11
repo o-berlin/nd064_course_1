@@ -6,7 +6,10 @@ WORKDIR /techtrends
 RUN apt-get update
 RUN apt-get install -y python sqlite3 vim
 RUN apt-get install -y python-setuptools python-dev build-essential python-pip
-RUN pip install -r requirements.txt
+# due to docker issue installing requirements here
+RUN pip install flask
+RUN pip install werkzeug
+#RUN pip install -r requirements.txt
 
 # command to run on container start
 ENTRYPOINT ["/bin/bash", "scripts.sh"]
