@@ -23,4 +23,4 @@ jobs:
         #with:
          # push: true
           #tags: techtrends:latest
-        run: docker build /project/techtrends --file Dockerfile --tag techtrends:latest
+        run: docker build ./ --file Dockerfile --tag techtrends:latest
