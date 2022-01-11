@@ -4,11 +4,11 @@ metadata:
   labels:
     app: techtrends
     tag: latest
-  namespace: { { .Values.namespace.name } }
+  namespace: {{ .Values.namespace.name }}
   name: techtrends
 spec:
   ports:
-    - port: { { .Values.service.port } }
+    - port: {{ .Values.service.port }}
       protocol: TCP
       targetPort: 3111
   selector:
