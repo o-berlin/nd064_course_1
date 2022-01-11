@@ -20,9 +20,9 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN}}
       -
         name: Build and push
-        id: docker_build
-        uses: docker/build-push-action@v2
-        with:
-          push: true
-          tags: techtrends:latest
-        #run: docker build ./ --file Dockerfile --tag techtrends:latest
+        #id: docker_build
+        #uses: docker/build-push-action@v2
+        #with:
+         # push: true
+          #tags: techtrends:latest
+        run: docker build ./Dockerfile --tag techtrends:latest
