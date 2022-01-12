@@ -25,4 +25,4 @@ jobs:
           context: .
           file: ./project/techtrends/Dockerfile
           push: true
-          tags: oberlin/techtrends:latest
+          tags: techtrends:latest

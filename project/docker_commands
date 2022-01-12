@@ -4,10 +4,10 @@ docker build -t techtrends .
 
 ## Docker commands used to run the application
 # TODO: insert the docker run command
- docker run -d -p 7111:3111 --name tech-trend tecdochtrends
+ docker run -d -p 7111:3111 --name techtrends techtrends
 ## Docker commands used to get the application logs
 # TODO: insert the docker logs command
-    docker logs tech-trend
+    docker logs techtrends
 ## Logs from the container running the TechTrends application
 # TODO: paste logs from the Docker container 
  * Serving Flask app "app" (lazy loading)
