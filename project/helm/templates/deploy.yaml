@@ -18,7 +18,9 @@ spec:
       containers:
       - image: techtrends
         imagePullPolicy: {{ .Values.image.pullPolicy }}
-        name: techtrends
+        name:
+        imagePullSecrets:
+          - name: regcred
         resources:
           requests:
             cpu: {{ .Values.resources.requests.cpu}}
