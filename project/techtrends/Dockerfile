@@ -13,5 +13,4 @@ RUN pip install werkzeug
 #RUN pip install -r requirements.txt
 
 # command to run on container start
-WORKDIR /techtrends
-CMD ["/bin/bash","scripts.sh"]
+ENTRYPOINT ["scripts.sh"]
