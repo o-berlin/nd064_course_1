@@ -15,11 +15,9 @@ spec:
       labels:
         app: techtrends
     spec:
-      {{ - with .Values.imagePullSecrets }}
-      imagePullSecrets:
-      {{ - toYaml . | nindent 8 }}
-      {{ - end }}
       containers:
+      imagePullSecrets:
+      - name: {{.Values.imageCredentials }}
       - image: techtrends
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         name: techtrends
