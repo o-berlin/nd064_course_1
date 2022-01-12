@@ -20,7 +20,7 @@ spec:
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         name: techtrends
       imagePullSecrets:
-        - name: regcred
+        - name: {{ .Values.imagePullSecrets.name }}
         resources:
           requests:
             cpu: {{ .Values.resources.requests.cpu}}
