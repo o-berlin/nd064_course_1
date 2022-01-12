@@ -9,6 +9,7 @@ WORKDIR /techtrends
 # due to docker issue installing requirements here
 RUN pip install flask
 RUN pip install werkzeug
+RUN echo $PATH
 RUN ["chmod", "+x", "./techtrends/scripts.sh"]
 #RUN pip install -r requirements.txt
 
