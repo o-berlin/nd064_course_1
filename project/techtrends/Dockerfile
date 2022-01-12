@@ -2,7 +2,6 @@ FROM python:2.7
 LABEL maintainer="Olga Berlin"
 COPY . /techtrends
 WORKDIR /techtrends
-RUN echo pwd
 #RUN apt-get update
 #RUN apt-get install -y python sqlite3 vim
 #RUN apt-get install -y python-setuptools python-dev build-essential python-pip
@@ -13,6 +12,5 @@ RUN pip install werkzeug
 
 #Bug fixed by using this article: https://davidhamann.de/2021/11/09/docker-entrypoint-not-found/
 # command to run on container start
-WORKDIR /techtrends
-RUN ["chmod", "+x", "./scripts.sh"]
-ENTRYPOINT ['./scripts.sh']
+RUN ["chmod", "+x", "scripts.sh"]
+ENTRYPOINT ['scripts.sh']
