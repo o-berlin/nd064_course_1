@@ -7,7 +7,7 @@ service:
   protocol: TCP
   type: ClusterIP
 image:
-  repository: techtrends
+  repository: oberlin/techtrends
   tag: latest
   pullPolicy: Always
 
