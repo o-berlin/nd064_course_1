@@ -12,4 +12,5 @@ RUN pip install werkzeug
 #RUN pip install -r requirements.txt
 
 # command to run on container start
+RUN chmod +x /scripts.sh
 CMD ["/bin/bash", "scripts.sh"]
