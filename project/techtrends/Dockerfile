@@ -13,4 +13,4 @@ RUN pip install werkzeug
 
 # command to run on container start
 RUN chmod +x /scripts.sh
-CMD ["/bin/bash", "scripts.sh"]
+CMD ["/bin/bash", "./scripts.sh"]
