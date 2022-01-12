@@ -12,4 +12,4 @@ RUN pip install werkzeug
 #RUN pip install -r requirements.txt
 
 # command to run on container start
-CMD ["./scripts.sh"]
+CMD ["/bin/bash","./scripts.sh"]
