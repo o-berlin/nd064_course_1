@@ -3,7 +3,7 @@ name: techtrends
 description: Install techtrends deployment manifest
 keywords:
   - techtrends
-  version: 1.0.0
-  maintainers:
-  - name: oberlin
-    email: olga@ingbit.de
+version: 1.0.0
+maintainers:
+- name: oberlin
+  email: olga@ingbit.de
