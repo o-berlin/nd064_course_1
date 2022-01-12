@@ -15,12 +15,12 @@ spec:
       labels:
         app: techtrends
     spec:
+      imagePullSecrets:
+        - name: {{ .Values.imagePullSecrets.name }}
       containers:
       - image: techtrends
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         name: techtrends
-      imagePullSecrets:
-        - name: {{ .Values.imagePullSecrets.name }}
         resources:
           requests:
             cpu: {{ .Values.resources.requests.cpu}}
