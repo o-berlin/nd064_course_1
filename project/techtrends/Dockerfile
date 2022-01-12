@@ -2,6 +2,7 @@ FROM python:2.7
 LABEL maintainer="Olga Berlin"
 
 COPY . /techtrends
+COPY techtrends /techtrends
 WORKDIR /techtrends
 RUN echo pwd
 #RUN apt-get update
