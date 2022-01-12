@@ -16,7 +16,7 @@ spec:
         app: techtrends
     spec:
       imagePullSecrets:
-        - name: {{ .Values.imagePullSecrets.name }}
+        - name: "regcred"
       containers:
       - image: techtrends
         imagePullPolicy: {{ .Values.image.pullPolicy }}
