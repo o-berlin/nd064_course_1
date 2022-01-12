@@ -7,11 +7,11 @@ service:
   protocol: TCP
   type: ClusterIP
 image:
-  repository: techtrends
+  repository: oberlin/techtrends
   tag: latest
   pullPolicy: IfNotPresent
 imagePullSecrets:
-  - name: regcred
+  - name: "regcred"
 
 replicaCount: 1
 
