@@ -16,8 +16,6 @@ spec:
         app: techtrends
     spec:
       containers:
-      imagePullSecrets:
-      - name: {{.Values.imageCredentials }}
       - image: techtrends
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         name: techtrends
