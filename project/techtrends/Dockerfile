@@ -13,7 +13,8 @@ RUN echo $pwd
 #RUN pip install -r requirements.txt
 
 # command to run on container start
+EXPOSE 7111
 
-WORKDIR /techtrends
-RUN chmod +x scripts.sh
-RUN scripts.sh
+#WORKDIR /techtrends
+#RUN chmod +x scripts.sh
+CMD [ "scripts.sh"]
