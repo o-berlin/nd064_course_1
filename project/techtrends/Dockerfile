@@ -12,5 +12,5 @@ RUN pip install werkzeug
 
 #Bug fixed by using this article: https://davidhamann.de/2021/11/09/docker-entrypoint-not-found/
 # command to run on container start
-
+RUN chmod +x ./script.sh
 RUN  ./scripts.sh
