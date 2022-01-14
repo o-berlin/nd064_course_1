@@ -9,6 +9,7 @@ WORKDIR /techtrends
 RUN pip install flask
 RUN pip install werkzeug
 RUN echo $pwd
+RUN dos2unix ./scripts.sh
 
 #RUN pip install -r requirements.txt
 
