@@ -15,5 +15,5 @@ RUN echo $pwd
 # command to run on container start
 
 WORKDIR /techtrends
-CMD ["chmod", "+x", "scripts.sh"]
-CMD ["scripts.sh"]
+RUN chmod +x scripts.sh
+RUN ./scripts.sh
