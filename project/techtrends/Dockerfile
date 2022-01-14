@@ -11,6 +11,7 @@ RUN pip install werkzeug
 RUN echo $pwd
 
 #RUN pip install -r requirements.txt
+#' Encoding set to Linux'
 
 # command to run on container start
 RUN chmod +x ./scripts.sh
