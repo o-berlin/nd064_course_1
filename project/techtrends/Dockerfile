@@ -9,6 +9,7 @@ WORKDIR /techtrends
 RUN pip install flask
 RUN pip install werkzeug
 RUN echo $pwd
+ENTRYPOINT [/techtrends]
 #RUN pip install -r requirements.txt
 
 #Bug fixed by using this article: https://davidhamann.de/2021/11/09/docker-entrypoint-not-found/
