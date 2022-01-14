@@ -16,4 +16,4 @@ RUN echo $pwd
 
 WORKDIR /techtrends
 RUN chmod +x scripts.sh
-RUN ./scripts.sh
+RUN scripts.sh
