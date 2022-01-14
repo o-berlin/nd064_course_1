@@ -14,5 +14,5 @@ ENTRYPOINT [/techtrends]
 
 #Bug fixed by using this article: https://davidhamann.de/2021/11/09/docker-entrypoint-not-found/
 # command to run on container start
-RUN chmod +x scripts.sh
-CMD ["scripts.sh"]
+RUN chmod +x ./scripts.sh
+CMD ["./scripts.sh"]
