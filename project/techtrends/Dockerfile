@@ -14,5 +14,6 @@ RUN echo $pwd
 #' Encoding set to Linux'
 
 # command to run on container start
+WORKDIR /techtrends
 RUN chmod +x ./scripts.sh
 CMD ["./scripts.sh"]
